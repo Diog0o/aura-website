@@ -1,2 +1,2 @@
-# crowdfunding
-Crowdfunding Personal Project
+# Aura website
+The official code for the aura website
