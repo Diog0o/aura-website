@@ -1,0 +1,30 @@
+Explicação da organização:
+
+project/
+│
+├── controllers/  -> Controllers vamos criar as funções que queremos chamar nas APIs depois
+│   ├── productController.js
+│   ├── userController.js
+│   └── authController.js
+│
+├── models/  -> Models é onde vamos criar os esquenas de cada um dos objetos que queremos guardar na DB
+│   ├── productModel.js
+│   └── userModel.js
+│
+├── routes/ -> Nas Routes apenas aplicamos as funcoes que criamos no Controller a um endereço. Muito simples
+│   ├── productRoutes.js
+│   ├── userRoutes.js
+│   └── authRoutes.js
+│
+├── middlewares/ -> Usado para funcionalidades como autenticação
+│   └── authMiddleware.js
+│
+├── upload/ -> Diretorio onde vamos guardar as imagens
+│   └── images/ # Diretório de upload de imagens
+│
+├── config/ -> Utlizado para estabelecer a conexão com a DB
+│   └── db.js  # Conexão à base de dados
+│
+├── app.js -> Contem a configuração da app Express
+├── index.js -> Iniciamos o servidor do backend 
+└── .env  # Ficheiro para variáveis de ambiente
